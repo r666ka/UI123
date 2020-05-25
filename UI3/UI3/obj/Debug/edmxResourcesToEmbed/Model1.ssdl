@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище MaslovModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sheet1$">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Number" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name_URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="class" Type="nvarchar" MaxLength="255" />
+    <Property Name="class1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Date" Type="nvarchar" MaxLength="255" />
+    <Property Name="Status_URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Status" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Function Name="Maslov" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Title" Type="nvarchar" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Date" Type="nvarchar" Mode="In" />
+    <Parameter Name="Id" Type="int" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="Хранилище MaslovModelContainer">
+    <EntitySet Name="Sheet1$" EntityType="Self.Sheet1$" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

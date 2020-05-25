@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище LoginUserModelContainer" CdmEntityContainer="LoginUserEntities">
+    <EntitySetMapping Name="TbUser">
+      <EntityTypeMapping TypeName="LoginUserModel.TbUser">
+        <MappingFragment StoreEntitySet="TbUser">
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sheet1_">
+      <EntityTypeMapping TypeName="LoginUserModel.Sheet1_">
+        <MappingFragment StoreEntitySet="Sheet1$">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Status_URL" ColumnName="Status_URL" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="class1" ColumnName="class1" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Name_URL" ColumnName="Name_URL" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

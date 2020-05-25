@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MaslovModelContainer" CdmEntityContainer="MaslovEntities">
+    <EntitySetMapping Name="Sheet1_">
+      <EntityTypeMapping TypeName="MaslovModel.Sheet1_">
+        <MappingFragment StoreEntitySet="Sheet1$">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Name_URL" ColumnName="Name_URL" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="class1" ColumnName="class1" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Status_URL" ColumnName="Status_URL" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Maslov" FunctionName="Хранилище MaslovModel.Maslov" />
+  </EntityContainerMapping>
+</Mapping>
